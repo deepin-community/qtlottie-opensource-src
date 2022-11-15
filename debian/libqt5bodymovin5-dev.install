@@ -1,0 +1,9 @@
+usr/include/${DEB_HOST_MULTIARCH}/qt5/QtBodymovin/QtBodymovin
+usr/include/${DEB_HOST_MULTIARCH}/qt5/QtBodymovin/QtBodymovinDepends
+usr/include/${DEB_HOST_MULTIARCH}/qt5/QtBodymovin/QtBodymovinVersion
+usr/include/${DEB_HOST_MULTIARCH}/qt5/QtBodymovin/bmglobal.h
+usr/include/${DEB_HOST_MULTIARCH}/qt5/QtBodymovin/qtbodymovinversion.h
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Bodymovin/Qt5BodymovinConfig.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/cmake/Qt5Bodymovin/Qt5BodymovinConfigVersion.cmake
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5Bodymovin.prl
+usr/lib/${DEB_HOST_MULTIARCH}/libQt5Bodymovin.so

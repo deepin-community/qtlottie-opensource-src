@@ -1,0 +1,48 @@
+Source: qtlottie-opensource-src
+Section: libs
+Priority: optional
+Maintainer: Deepin Packages Builder <packages@deepin.com>
+Build-Depends: debhelper-compat (= 13),
+               pkg-config,
+               pkg-kde-tools,
+               qtbase5-private-dev (>= 5.15.7~),
+               qtdeclarative5-private-dev (>= 5.15.7~),
+Standards-Version: 4.6.1
+Homepage: https://www.qt.io/developers/
+Rules-Requires-Root: no
+
+Package: libqt5bodymovin5
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Qt 5 Lottie Bodymovin library
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains a plugin created/exported directly from After Effects.
+
+Package: qml-module-qt-labs-lottieqt
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: qml-module-qtquick2, ${misc:Depends}, ${shlibs:Depends}
+Description: Qt 5 Lottie QML module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains a QML API for rendering graphics and animations
+ that are exported in JSON format by the Bodymovin plugin for Adobe
+ After Effects.
+
+Package: libqt5bodymovin5-dev
+Architecture: any
+Multi-Arch: same
+Section: libdevel
+Depends: libqt5bodymovin5 (= ${binary:Version}), qtbase-dev, ${misc:Depends}
+Description: Qt 5 Lottie - development files
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the header development files used for building Qt 5
+ applications using Qt Lottie libraries.
